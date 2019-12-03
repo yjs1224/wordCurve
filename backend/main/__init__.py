@@ -8,6 +8,7 @@ main = Blueprint('main', __name__, template_folder='templates', static_folder='s
 @main.route('/getCurve', methods=['GET'])
 def get_curve():
     words = request.args.getlist('words[]')
+    # print(SINGLEWORD.get_curve(words))
     return SINGLEWORD.get_curve(words)
 
 

@@ -8,4 +8,4 @@ if __name__ == "__main__":
     parser.add_argument('--port', type=int, default=5003)
     parser.add_argument('--debug', default=False, action="store_true")
     args = parser.parse_args()
-    app.run(host='0.0.0.0', port=args.port, debug=args.debug, ssl_context='adhoc')
+    app.run(host='192.168.56.1', port=args.port, debug=args.debug, ssl_context='adhoc')
